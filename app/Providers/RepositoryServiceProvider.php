@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use App\Repositories\Book\{BookRepository, BookRepositoryEloquent};
 use Illuminate\Support\ServiceProvider;
 
 class RepositoryServiceProvider extends ServiceProvider
@@ -12,7 +13,7 @@ class RepositoryServiceProvider extends ServiceProvider
      * @var array
      */
     const BINDINGS = [
-        //
+        BookRepository::class => BookRepositoryEloquent::class,
     ];
 
     /**

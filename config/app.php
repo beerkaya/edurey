@@ -187,6 +187,7 @@ return [
          */
         Laravel\Telescope\TelescopeServiceProvider::class,
         Prettus\Repository\Providers\RepositoryServiceProvider::class,
+        App\Providers\RepositoryServiceProvider::class,
 
         /*
          * Application Service Providers...
